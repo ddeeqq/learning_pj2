@@ -1,0 +1,1142 @@
+{
+ "n_files": 64,
+ "n_subjects": 8,
+ "n_classes": 8,
+ "file_counts": {
+  "30_extor": 8,
+  "30_fist": 8,
+  "30_open": 8,
+  "30_pro": 8,
+  "60_extor": 8,
+  "60_fist": 8,
+  "60_open": 8,
+  "60_pro": 8
+ },
+ "trial_counts": {
+  "30_fist": 240,
+  "60_fist": 240,
+  "30_open": 240,
+  "60_open": 240,
+  "30_pro": 240,
+  "60_pro": 240,
+  "30_extor": 240,
+  "60_extor": 240
+ },
+ "total_trials": 1920,
+ "raw_file_shape": [
+  151361,
+  5
+ ],
+ "raw_columns": [
+  "bandpass 1",
+  "bandpass 2",
+  "bandpass 3",
+  "bandpass 4",
+  "bandpass 5",
+  "time",
+  "onset",
+  "mark"
+ ],
+ "trial_array_shape": [
+  30,
+  5000,
+  5
+ ],
+ "n_channels": 5,
+ "samples_min": 150721,
+ "samples_max": 153601,
+ "mark_gap_min": 4999,
+ "mark_gap_max": 5001,
+ "all_files_30_trials": true,
+ "example_file": "a_30 extor.csv",
+ "per_file": [
+  {
+   "file": "a_30 extor.csv",
+   "subject": "a",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 151361,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.4
+  },
+  {
+   "file": "a_30 fist.csv",
+   "subject": "a",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 151412,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.4
+  },
+  {
+   "file": "a_30 open.csv",
+   "subject": "a",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 152128,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.1
+  },
+  {
+   "file": "a_30 pro.csv",
+   "subject": "a",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 151501,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.5
+  },
+  {
+   "file": "a_60 extor.csv",
+   "subject": "a",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 151770,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 4999,
+   "mark_gap_max": 5001,
+   "duration_s": 151.8
+  },
+  {
+   "file": "a_60 fist.csv",
+   "subject": "a",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 152180,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.2
+  },
+  {
+   "file": "a_60 open.csv",
+   "subject": "a",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 152256,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.3
+  },
+  {
+   "file": "a_60 pro.csv",
+   "subject": "a",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 152154,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.2
+  },
+  {
+   "file": "b_30 extor.csv",
+   "subject": "b",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 150721,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 150.7
+  },
+  {
+   "file": "b_30 fist.csv",
+   "subject": "b",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 151898,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.9
+  },
+  {
+   "file": "b_30 open.csv",
+   "subject": "b",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 151271,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 4999,
+   "mark_gap_max": 5001,
+   "duration_s": 151.3
+  },
+  {
+   "file": "b_30 pro.csv",
+   "subject": "b",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 152026,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.0
+  },
+  {
+   "file": "b_60 extor.csv",
+   "subject": "b",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 151156,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.2
+  },
+  {
+   "file": "b_60 fist.csv",
+   "subject": "b",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 151412,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 151.4
+  },
+  {
+   "file": "b_60 open.csv",
+   "subject": "b",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 151924,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 151.9
+  },
+  {
+   "file": "b_60 pro.csv",
+   "subject": "b",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 152014,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.0
+  },
+  {
+   "file": "c_30 extor.csv",
+   "subject": "c",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 151975,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.0
+  },
+  {
+   "file": "c_30 fist.csv",
+   "subject": "c",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 152282,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.3
+  },
+  {
+   "file": "c_30 open.csv",
+   "subject": "c",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 151181,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.2
+  },
+  {
+   "file": "c_30 pro.csv",
+   "subject": "c",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 151988,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.0
+  },
+  {
+   "file": "c_60 extor.csv",
+   "subject": "c",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 151156,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.2
+  },
+  {
+   "file": "c_60 fist.csv",
+   "subject": "c",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 151886,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.9
+  },
+  {
+   "file": "c_60 open.csv",
+   "subject": "c",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 151156,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.2
+  },
+  {
+   "file": "c_60 pro.csv",
+   "subject": "c",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 152154,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.2
+  },
+  {
+   "file": "d_30 extor.csv",
+   "subject": "d",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 151808,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 151.8
+  },
+  {
+   "file": "d_30 fist.csv",
+   "subject": "d",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 150837,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 4999,
+   "mark_gap_max": 5001,
+   "duration_s": 150.8
+  },
+  {
+   "file": "d_30 open.csv",
+   "subject": "d",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 152346,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.3
+  },
+  {
+   "file": "d_30 pro.csv",
+   "subject": "d",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 151821,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.8
+  },
+  {
+   "file": "d_60 extor.csv",
+   "subject": "d",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 151335,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.3
+  },
+  {
+   "file": "d_60 fist.csv",
+   "subject": "d",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 151374,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.4
+  },
+  {
+   "file": "d_60 open.csv",
+   "subject": "d",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 152244,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.2
+  },
+  {
+   "file": "d_60 pro.csv",
+   "subject": "d",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 150797,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 150.8
+  },
+  {
+   "file": "e_30 extor.csv",
+   "subject": "e",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 151489,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.5
+  },
+  {
+   "file": "e_30 fist.csv",
+   "subject": "e",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 151629,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.6
+  },
+  {
+   "file": "e_30 open.csv",
+   "subject": "e",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 151694,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 151.7
+  },
+  {
+   "file": "e_30 pro.csv",
+   "subject": "e",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 151297,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.3
+  },
+  {
+   "file": "e_60 extor.csv",
+   "subject": "e",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 151604,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.6
+  },
+  {
+   "file": "e_60 fist.csv",
+   "subject": "e",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 151950,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.9
+  },
+  {
+   "file": "e_60 open.csv",
+   "subject": "e",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 151975,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.0
+  },
+  {
+   "file": "e_60 pro.csv",
+   "subject": "e",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 153601,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 4999,
+   "mark_gap_max": 5001,
+   "duration_s": 153.6
+  },
+  {
+   "file": "f_30 extor.csv",
+   "subject": "f",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 150990,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.0
+  },
+  {
+   "file": "f_30 fist.csv",
+   "subject": "f",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 152616,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.6
+  },
+  {
+   "file": "f_30 open.csv",
+   "subject": "f",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 152180,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.2
+  },
+  {
+   "file": "f_30 pro.csv",
+   "subject": "f",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 151067,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.1
+  },
+  {
+   "file": "f_60 extor.csv",
+   "subject": "f",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 150836,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 150.8
+  },
+  {
+   "file": "f_60 fist.csv",
+   "subject": "f",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 150964,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.0
+  },
+  {
+   "file": "f_60 open.csv",
+   "subject": "f",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 151770,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.8
+  },
+  {
+   "file": "f_60 pro.csv",
+   "subject": "f",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 151271,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 4999,
+   "mark_gap_max": 5001,
+   "duration_s": 151.3
+  },
+  {
+   "file": "g_30 extor.csv",
+   "subject": "g",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 151885,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.9
+  },
+  {
+   "file": "g_30 fist.csv",
+   "subject": "g",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 152116,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 152.1
+  },
+  {
+   "file": "g_30 open.csv",
+   "subject": "g",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 152231,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.2
+  },
+  {
+   "file": "g_30 pro.csv",
+   "subject": "g",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 151617,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 151.6
+  },
+  {
+   "file": "g_60 extor.csv",
+   "subject": "g",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 152564,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.6
+  },
+  {
+   "file": "g_60 fist.csv",
+   "subject": "g",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 151988,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.0
+  },
+  {
+   "file": "g_60 open.csv",
+   "subject": "g",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 151117,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.1
+  },
+  {
+   "file": "g_60 pro.csv",
+   "subject": "g",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 152846,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.8
+  },
+  {
+   "file": "h_30 extor.csv",
+   "subject": "h",
+   "angle": "30",
+   "gesture": "extor",
+   "label": "30_extor",
+   "n_samples": 151447,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.4
+  },
+  {
+   "file": "h_30 fist.csv",
+   "subject": "h",
+   "angle": "30",
+   "gesture": "fist",
+   "label": "30_fist",
+   "n_samples": 151194,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5001,
+   "duration_s": 151.2
+  },
+  {
+   "file": "h_30 open.csv",
+   "subject": "h",
+   "angle": "30",
+   "gesture": "open",
+   "label": "30_open",
+   "n_samples": 151936,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.9
+  },
+  {
+   "file": "h_30 pro.csv",
+   "subject": "h",
+   "angle": "30",
+   "gesture": "pro",
+   "label": "30_pro",
+   "n_samples": 152065,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.1
+  },
+  {
+   "file": "h_60 extor.csv",
+   "subject": "h",
+   "angle": "60",
+   "gesture": "extor",
+   "label": "60_extor",
+   "n_samples": 151911,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.9
+  },
+  {
+   "file": "h_60 fist.csv",
+   "subject": "h",
+   "angle": "60",
+   "gesture": "fist",
+   "label": "60_fist",
+   "n_samples": 152487,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 4999,
+   "mark_gap_max": 5001,
+   "duration_s": 152.5
+  },
+  {
+   "file": "h_60 open.csv",
+   "subject": "h",
+   "angle": "60",
+   "gesture": "open",
+   "label": "60_open",
+   "n_samples": 152296,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 152.3
+  },
+  {
+   "file": "h_60 pro.csv",
+   "subject": "h",
+   "angle": "60",
+   "gesture": "pro",
+   "label": "60_pro",
+   "n_samples": 151796,
+   "n_marks": 30,
+   "n_trials": 30,
+   "trial_shape": [
+    5000,
+    5
+   ],
+   "mark_gap_min": 5000,
+   "mark_gap_max": 5000,
+   "duration_s": 151.8
+  }
+ ]
+}

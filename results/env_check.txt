@@ -1,0 +1,7 @@
+$ python - <<'EOF'  (import numpy, scipy, sklearn, xgboost)
+numpy    2.5.3
+scipy    1.18.1
+sklearn  1.9.1
+xgboost  3.4.1
+
+# python 3.13.16 · Linux x86_64
