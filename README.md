@@ -8,7 +8,6 @@
   Machine Learning Performances.* Biomedical Engineering Letters (2026). DOI 10.1007/s13534-026-00607-7
 - 데이터: https://github.com/TestUser-alt-dev/sEMG-Hand-Gesture-Elbow-Angle-Dataset (논문 원 데이터, 8명 × 8클래스 × 30회)
 - 작성자: 19146809 · 컴퓨터공학과 · 김지훈
-- **제출물: [`report/19146809_김지훈.pdf`](report/19146809_김지훈.pdf)**
 
 ---
 
@@ -66,7 +65,7 @@
 ```bash
 # 0) 환경 (Step 1 가상환경 재사용)
 source .venv/bin/activate            # Windows: .venv\Scripts\activate
-pip install -r requirements.txt      # 이번 주 신규 패키지는 xgboost
+pip install -r requirements.txt      # 신규 패키지는 xgboost
 
 # 1) 데이터 받기 (약 930MB, 저장소에는 포함하지 않음)
 git clone https://github.com/TestUser-alt-dev/sEMG-Hand-Gesture-Elbow-Angle-Dataset data/sEMG-Hand-Gesture-Elbow-Angle-Dataset
@@ -74,8 +73,6 @@ git clone https://github.com/TestUser-alt-dev/sEMG-Hand-Gesture-Elbow-Angle-Data
 # 2) 실습 단계 1~5 실행 → results/ 생성 (약 1분)
 python src/week1_lab.py
 
-# 3) 제출 리포트 PDF 생성 → report/19146809_김지훈.pdf
-python report/generate_report.py
 ```
 
 ## 5. 파일 설명
