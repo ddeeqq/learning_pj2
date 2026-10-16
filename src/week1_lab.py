@@ -2,12 +2,12 @@
 """
 Step 2 · 1주차 실습 — 문제 정의와 데이터 이해 (5단계)
 
-  단계 1  환경 점검          -> results/env_check.txt
+  단계 1  환경 점검          -> results/week1/env_check.txt
   단계 2  데이터 확보        -> 파일 목록 확인 (64개 CSV)
-  단계 3  데이터 구조 파악    -> results/data_summary.json, results/class_counts.csv
-  단계 4  채널별 신호 그리기  -> results/ch5_example.png, results/angle_side_by_side.png,
-                               results/angle_envelope_grid.png, results/class_channel_rms.png
-  단계 5  클래스 설계안 근거  -> results/angle_rms_table.csv (30° vs 60° 수치 비교)
+  단계 3  데이터 구조 파악    -> results/week1/data_summary.json, results/week1/class_counts.csv
+  단계 4  채널별 신호 그리기  -> results/week1/ch5_example.png, results/week1/angle_side_by_side.png,
+                               results/week1/angle_envelope_grid.png, results/week1/class_channel_rms.png
+  단계 5  클래스 설계안 근거  -> results/week1/angle_rms_table.csv (30° vs 60° 수치 비교)
 
 이번 주는 모델을 만들지 않는다. 데이터를 세고, 눈으로 보는 것까지만 한다.
 
@@ -34,8 +34,8 @@ from matplotlib import font_manager
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data" / "sEMG-Hand-Gesture-Elbow-Angle-Dataset" / "data"
-RESULTS = ROOT / "results"
-RESULTS.mkdir(exist_ok=True)
+RESULTS = ROOT / "results" / "week1"
+RESULTS.mkdir(parents=True, exist_ok=True)
 
 FS = 1000                 # Hz
 TRIAL_LEN = 5 * FS        # 5초 시행 = 휴식 2 + 동작 1 + 휴식 2
@@ -366,7 +366,7 @@ def main():
            "classes": CLASSES, "act_win": ACT_WIN, "rest_win": REST_WIN}
     (RESULTS / "signal_stats.json").write_text(json.dumps(out, ensure_ascii=False, indent=1),
                                                encoding="utf-8")
-    print("\n완료: results/ 폴더 확인")
+    print("\n완료: results/week1/ 폴더 확인")
 
 
 if __name__ == "__main__":

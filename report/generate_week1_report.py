@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 Step 2 · 1주차 과제(강의자료 16쪽) 제출물 5개 항목을 PDF 하나로 묶는다.
-  ① 환경 확인     -> results/env_check.txt
-  ② 데이터 요약   -> results/data_summary.json, class_counts.csv
-  ③ 신호 그림     -> results/ch5_example.png, class_channel_rms.png
-  ④ 비교 관찰     -> results/angle_side_by_side.png, angle_envelope_grid.png, angle_rms_table.csv
+  ① 환경 확인     -> results/week1/env_check.txt
+  ② 데이터 요약   -> results/week1/data_summary.json, class_counts.csv
+  ③ 신호 그림     -> results/week1/ch5_example.png, class_channel_rms.png
+  ④ 비교 관찰     -> results/week1/angle_side_by_side.png, angle_envelope_grid.png, angle_rms_table.csv
   ⑤ 클래스 설계안 -> 5개 항목 한 페이지
-출력: report/19146809_김지훈.pdf
+출력: report/19146809_김지훈_1주차.pdf
 
-먼저 python src/week1_lab.py 로 results/ 를 만든 뒤 실행한다.
-실행: python report/generate_report.py
+먼저 python src/week1_lab.py 로 results/week1/ 를 만든 뒤 실행한다.
+실행: python report/generate_week1_report.py
 """
 import json
 import sys
@@ -34,7 +34,7 @@ from matplotlib import font_manager  # noqa: E402
 _HAVE = {f.name for f in font_manager.fontManager.ttflist}
 CODE_FONT = [f for f in ["Consolas", "DejaVu Sans Mono"] if f in _HAVE] + [KFONT]
 
-RESULTS = ROOT / "results"
+RESULTS = ROOT / "results" / "week1"
 PAGE_SIZE = (8.27, 11.69)  # A4
 HEADER = "sEMG 동작·각도 동시 분류 · Step 2 1주차 제출물"
 NAVY, BLUE, INK, MUTED = "#12233F", "#4A6FA5", "#1F2937", "#6B7280"
@@ -145,7 +145,7 @@ def generate():
         r = A[(A.gesture == g) & (A.channel == ch)].iloc[0]
         return r
 
-    out_path = ROOT / "report" / "19146809_김지훈.pdf"
+    out_path = ROOT / "report" / "19146809_김지훈_1주차.pdf"
     with PdfPages(out_path) as pdf:
         # ---------------- 표지 ----------------
         fig = plt.figure(figsize=PAGE_SIZE)
@@ -187,14 +187,14 @@ def generate():
             "# Step 1 프로젝트 폴더에서",
             "$ source .venv/bin/activate      # Windows: .venv\\Scripts\\activate",
             "$ pip install xgboost",
-            "$ python src/week1_lab.py        # 단계 1: 아래 버전 출력 + results/env_check.txt 저장",
+            "$ python src/week1_lab.py        # 단계 1: 아래 버전 출력 + results/week1/env_check.txt 저장",
         ], dark=True, line_h=0.02, fontsize=8.6)
         y = code_box(fig, y, env_txt, dark=True, line_h=0.022, fontsize=9.5)
         y = body_text(ax, y,
             "• 네 줄(numpy · scipy · sklearn · xgboost)의 버전이 모두 출력되었으므로 성공이다.\n"
             "• 이번 주는 모델을 만들지 않으므로 딥러닝 패키지(torch)는 쓰지 않는다. Step 1 환경은 "
             "지우지 않고 그대로 두었다.\n"
-            "• 같은 출력은 results/env_check.txt 에도 저장된다.")
+            "• 같은 출력은 results/week1/env_check.txt 에도 저장된다.")
         y -= 0.015
         draw_table(fig, y, ["패키지", "용도 (이번 주 / 다음 주)"], [
             ["numpy · pandas", "CSV 읽기, 시행 분할, RMS 계산"],
@@ -418,8 +418,8 @@ def generate():
             "$ pip install -r requirements.txt",
             "$ git clone https://github.com/TestUser-alt-dev/sEMG-Hand-Gesture-Elbow-Angle-Dataset \\",
             "      data/sEMG-Hand-Gesture-Elbow-Angle-Dataset",
-            "$ python src/week1_lab.py           # 단계 1~5, results/ 생성 (약 1분)",
-            "$ python report/generate_report.py  # 이 PDF 생성",
+            "$ python src/week1_lab.py           # 단계 1~5, results/week1/ 생성 (약 1분)",
+            "$ python report/generate_week1_report.py  # 이 PDF 생성",
         ], dark=True, line_h=0.02, fontsize=8.3)
         body_text(ax, y,
             "다음 주(2주차): 노치·대역통과 필터, 2초 세그먼트와 200ms 윈도우, RMS·MAV·WL·ZC·SSC 5종 × "
