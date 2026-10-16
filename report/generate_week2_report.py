@@ -302,7 +302,7 @@ def generate():
             fontsize=9.6)
         y -= 0.01
         y = sub_title(ax, y, "재현 방법")
-        y = code_box(fig, y, [
+        code_box(fig, y, [
             "$ pip install -r requirements.txt",
             "$ git clone https://github.com/TestUser-alt-dev/sEMG-Hand-Gesture-Elbow-Angle-Dataset \\",
             "      data/sEMG-Hand-Gesture-Elbow-Angle-Dataset",
@@ -312,9 +312,6 @@ def generate():
             ">>> d = np.load('results/week2/dataset.npz')",
             ">>> d['Xtr'].shape, d['Xte'].shape      # (29184, 25) (7296, 25)",
         ], dark=True, line_h=0.02, fontsize=8.3)
-        body_text(ax, y,
-            "다음 주(3주차): SVM · Random Forest · XGBoost를 dataset.npz로 학습하고, hold-out과 5-fold 교차검증, "
-            "8클래스 혼동행렬, 대응표본 t-검정으로 비교한다.", fontsize=9.6, color=MUTED)
         pdf.savefig(fig); plt.close(fig)
 
     print(f"저장 완료: {out_path}")
