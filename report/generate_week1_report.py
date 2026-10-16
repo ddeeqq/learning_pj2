@@ -196,11 +196,11 @@ def generate():
             "지우지 않고 그대로 두었다.\n"
             "• 같은 출력은 results/week1/env_check.txt 에도 저장된다.")
         y -= 0.015
-        draw_table(fig, y, ["패키지", "용도 (이번 주 / 다음 주)"], [
+        draw_table(fig, y, ["패키지", "용도"], [
             ["numpy · pandas", "CSV 읽기, 시행 분할, RMS 계산"],
-            ["scipy", "다음 주 노치·대역통과 필터"],
-            ["scikit-learn", "SVM · RF, 교차검증 (3주차~)"],
-            ["xgboost", "XGBoost 분류기 (이번 주 신규 설치)"],
+            ["scipy", "신호 처리 (scipy.signal)"],
+            ["scikit-learn", "머신러닝 라이브러리"],
+            ["xgboost", "이번 주 신규 설치"],
             ["matplotlib", "5채널 파형 · 포락선 · 히트맵 그림"],
         ], col_widths=[0.3, 0.7])
         pdf.savefig(fig); plt.close(fig)
@@ -265,8 +265,7 @@ def generate():
             f"있다. 64개 파일 1,920개 시행 전체에서 포락선 최대 시점의 중앙값은 {ep['peak_time_median']:.2f}초"
             f"(10~90%: {ep['peak_time_q10']:.2f}~{ep['peak_time_q90']:.2f}초)였고, 최대가 2~3초 안에 오는 "
             f"시행은 {ep['peak_in_2_3s_ratio'] * 100:.1f}%뿐이었다. mark가 메트로놈 박자 기준이라 실제 "
-            "움직임이 표시보다 앞서 시작하는 것으로 보인다. 다음 주 2초 세그먼트를 자를 때 이 차이를 "
-            "반영해야 한다(예: 0.5~2.5초).\n"
+            "움직임이 표시보다 앞서 시작하는 것으로 보인다.\n"
             "• 주먹 쥐기에서는 전완 3채널(ECR·ED·FDS)이 크게 반응하고, ED가 가장 크다(±0.5). "
             "상완 채널(Biceps·Triceps)은 진폭이 한 자릿수 작다.\n"
             "• ECR·Triceps에는 휴식 구간에도 약 0.6초 간격의 짧은 스파이크가 반복된다. 근수축과 무관하게 "
@@ -347,7 +346,7 @@ def generate():
             "영향을 가장 크게 받는다.\n"
             "• 반면 주먹 쥐기·손 펴기의 전완 채널은 0.95~1.08배이고 방향도 4~5명씩 엇갈렸다. 각도 정보는 "
             "주로 상완 2채널에 있고, 그마저 사람마다 방향이 다르다 — 개인차가 각도 구분을 흐릴 수 있다는 "
-            "뜻이며, 다음 주 특징의 표준화와 피험자 단위 검증이 중요한 이유다.\n"
+            "뜻이다.\n"
             "• 포락선 모양도 60°에서 버스트가 약간 일찍·뾰족하게 나타나는 경향이 있다(Open의 ED·FDS).",
             fontsize=9.4, line_h=0.0193, width=61)
         pdf.savefig(fig); plt.close(fig)
@@ -409,7 +408,7 @@ def generate():
             f"• 근활성 최대 시점이 mark 기준 약 {ep['peak_time_median']:.1f}초로, 슬라이드의 '2~3초 동작' "
             "표시보다 앞선다. 억지로 맞추지 않고 실제 구간을 기록했다.\n"
             "• 손 펴기에서 굴근 채널(FDS)이 가장 크게 나왔다 — 혼선 가능성, 검증하지 않음.\n"
-            "• 휴식 구간의 주기적 스파이크(ECR·Triceps) — 잡음으로 추정, 다음 주 필터 전후 비교에서 확인 예정.",
+            "• 휴식 구간의 주기적 스파이크(ECR·Triceps) — 잡음으로 추정, 원인은 확인하지 않음.",
             fontsize=9.6)
         y -= 0.01
         y = sub_title(ax, y, "재현 방법")
@@ -421,10 +420,6 @@ def generate():
             "$ python src/week1_lab.py           # 단계 1~5, results/week1/ 생성 (약 1분)",
             "$ python report/generate_week1_report.py  # 이 PDF 생성",
         ], dark=True, line_h=0.02, fontsize=8.3)
-        body_text(ax, y,
-            "다음 주(2주차): 노치·대역통과 필터, 2초 세그먼트와 200ms 윈도우, RMS·MAV·WL·ZC·SSC 5종 × "
-            "5채널 = 25차원 특징. 이번 주 그림(ch5_example.png)은 필터 전후 비교에 다시 쓴다.",
-            fontsize=9.6, color=MUTED)
         pdf.savefig(fig); plt.close(fig)
 
     print(f"저장 완료: {out_path}")

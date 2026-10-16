@@ -167,7 +167,7 @@ def generate():
         fig, ax = new_page(pdf, f"{HEADER} · ③")
         y = section_title(ax, 0.90, "③ 특징 구현 코드", "td_features 함수 전체 — src/week2_lab.py (numpy만 사용)")
         y = numbered_code(fig, y, source_lines(W.td_features), line_h=0.0172, fontsize=8.3)
-        y = sub_title(ax, y, "25차원 순서 (리포트·다음 주 해석용)")
+        y = sub_title(ax, y, "25차원 순서")
         chs = " · ".join(W.CH_NAMES)
         y = draw_table(fig, y, ["열 번호", "특징", "채널 순서", "식"], [
             ["0–4", "RMS", chs, "√(mean x²) — 신호 파워"],
@@ -245,7 +245,7 @@ def generate():
             "• 표준화된 특징의 클래스 평균을 보면 1주차의 관찰이 그대로 남아 있다: Fist는 전완 3채널, Open은 "
             "ED·FDS, Supination은 Biceps가 높고(60°에서 더 강함), Pronation은 전반적으로 낮다.\n"
             "• RMS·MAV·WL 세 블록은 거의 같은 무늬다(모두 진폭 계열). 25차원이지만 서로 강하게 상관된 특징이 "
-            "많다는 뜻이고, 다음 주 모델 비교 때 해석에 참고한다.\n"
+            "많다는 뜻이다.\n"
             "• 이 분할은 같은 피험자의 다른 시행이 양쪽에 들어가는 '피험자 내' 평가다. 처음 보는 사람에 대한 "
             "성능은 따로 피험자 단위 분할로 확인해야 한다.",
             fontsize=9.1, line_h=0.0184, width=63)
@@ -278,7 +278,7 @@ def generate():
             ["ZC 임계값", "0.01", "슬라이드·논문 조건 유지, 신호 대비 크다는 점 기록 (③)"],
             ["분할", "시행 단위 8:2, 피험자×클래스 층화", "누수 방지 + 그룹마다 24:6 (④)"],
             ["표준화", "StandardScaler, 학습셋 fit", "테스트 통계 누출 방지 (⑤)"],
-            ["시드", "random_state = 42", "다음 주에도 같은 분할"],
+            ["시드", "random_state = 42", "같은 분할 재현"],
         ], col_widths=[0.16, 0.38, 0.46], fontsize=8.4, height=0.025)
         pdf.savefig(fig); plt.close(fig)
 

@@ -48,7 +48,7 @@
 ![5채널 예시](results/week1/ch5_example.png)
 
 - **동작 구간 위치가 슬라이드와 다릅니다.** 1,920개 시행의 포락선 최대 시점 중앙값은 1.69초(10~90%: 1.21~2.07초)이고, 최대가 2~3초 안에 오는 시행은 14.7%뿐입니다.
-실제 활동 구간은 약 1.0~2.5초이므로, 다음 주 2초 세그먼트를 자를 때 반영해야 합니다.
+실제 활동 구간은 약 1.0~2.5초입니다.
 - **동작은 채널 패턴으로 갈립니다.** 주먹 쥐기는 전완 3채널, 손 펴기는 ED·FDS, 회외는 Biceps가 지배적이고, 회내는 모든 채널이 낮습니다.
 
 ![클래스×채널 RMS](results/week1/class_channel_rms.png)
@@ -149,7 +149,3 @@ python src/week2_lab.py
 | `results/week1/` | 1주차 산출물(그림, 요약 JSON/CSV) |
 | `results/week2/` | 2주차 산출물(그림, 요약, `dataset.npz`) |
 
-## 다음 주(3주차) 준비
-
-- `results/week2/dataset.npz`로 SVM · Random Forest · XGBoost 학습
-- hold-out과 5-fold 교차검증, 8클래스 혼동행렬, 대응표본 t-검정
