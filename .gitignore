@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 # 원 데이터(약 930MB)는 저장소에 올리지 않는다 — data/README.md 참고
 data/sEMG-Hand-Gesture-Elbow-Angle-Dataset/
+results/week3/features_all.npz
